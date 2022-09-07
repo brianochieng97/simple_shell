@@ -1,13 +1,17 @@
-#SHELL PROJECT
+#SHELL_PROJECT
 This is an ALX collaboration project on shell. It can be compiled using GCC and will execute a
 simple shell that can be used for some basic tasks and programs.
+
 #Objectives 
 To familiarize ourselves with the Linux programming environment.
 To learn how processes are created, destroyed and managed.
 To gain exposure to the necessary functionality in shells.
+
 #Description
+
 hsh is a simple UNIX command langauage interpreter that reads commands from either a file or standard input and executes them
-##How hsh works
+
+##How_hsh_works
 Prints a prompt and waits for a command from the user
 Creates a child process in which the command is checked
 The child process is replaced by the command, which accepts arguments
@@ -20,37 +24,44 @@ Works also in non interactive mode
 
  gcc -Wall -Werror -Wextra -pedantic -std=gnu89 *.c -o hsh
 
-##Program Specification
-##Basic Shell
-###Simple shell 0.1
-Write a UNIX command line interpreter.
-Usage: simple_shell
-Your Shell should:
-Display a prompt and wait for the user to type a command. A command line always ends with a new line.
-The prompt is displayed again each time a command has been executed.
-The command lines are simple, no semicolons, no pipes, no redirections or any other advanced features.
-The command lines are made only of one word. No arguments will be passed to programs.
-If an executable cannot be found, print an error message and display the prompt again.
-Handle errors.
-You have to handle the “end of file” condition (Ctrl+D)
+##Program_Specification
 
-###Simple shell 0.2
+##Basic_Shell
+
+###Simple_shell 0.1
+
+*Write a UNIX command line interpreter.
+*Usage: simple_shell
+*Your Shell should:
+*Display a prompt and wait for the user to type a command. A command line always ends with a new line.
+*The prompt is displayed again each time a command has been executed.
+*The command lines are simple, no semicolons, no pipes, no redirections or any other advanced features.
+*The command lines are made only of one word. No arguments will be passed to programs.
+*If an executable cannot be found, print an error message and display the prompt again.
+Handle errors.
+*You have to handle the “end of file” condition (Ctrl+D)
+
+###Simple_shell 0.2
 
 Simple shell 0.1 +
 Handle command lines with arguments
-###Simple shell 0.3
+
+###Simple_shell 0.3
 Simple shell 0.2 +
 Handle the PATH
 fork must not be called if the command doesn’t exist
-###Simple shell 0.4
+
+###Simple_shell 0.4
 Simple shell 0.3 +
 Implement the exit built-in, that exits the shell
 Usage: exit
-You don’t have to handle any argument to the built-in exit 
-###Simple shell 1.0
+You don’t have to handle any argument to the built-in exit
+ 
+###Simple_shell 1.0
 Simple shell 0.4 +
 Implement the env built-in, that prints the current environment
-###Simple shell 0.1.1
+
+###Simple_shell 0.1.1
 Simple shell 0.1 +
 Write your own getline function
 Use a buffer to read many chars at once and call the least possible the read system call
@@ -58,10 +69,12 @@ You will need to use static variables
 You are not allowed to use getline
 You don’t have to:
 be able to move the cursor
-###Simple shell 0.2.1
+
+###Simple_shell 0.2.1
 Simple shell 0.2 +
 You are not allowed to use strtok
-###Simple shell 0.4.1
+
+###Simple_shell 0.4.1
 Simple shell 0.4 +
 handle arguments for the built-in exit
 Usage: exit status, where status is an integer used to exit the shell
